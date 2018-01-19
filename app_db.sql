@@ -40,7 +40,7 @@ INSERT INTO `app_db`.`appuser` (
  'admin', 
  '$2a$10$Cg8yrs0BlbqUzlKFaUIYWuzytjxhfXFqmRBk.6I36DAO3Cp44wzSy',
  'Administrator', 
- 'bhaskard@biarca.com', 
+ 'test@test.com', 
  '1', 
  now(), 
  'admin', 
