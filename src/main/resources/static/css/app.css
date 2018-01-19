@@ -1,0 +1,376 @@
+@import "bootstrap.css";
+@import "bootstrap-theme.css";
+@import "font-awesome.css";
+
+/* login styles */
+.login-form {
+  margin-top: 270px;
+}
+
+.bg_form {
+  background: #fff;
+  padding: 26px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.bg_body {
+  /*background-image: url('../img/back.jpg');*/
+  background: #33414e;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.cus_app {
+  font-size: large;
+  color: #33414e;
+}
+
+/* Sidebar styles */
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+#wrapper.toggled {
+  padding-left: 300px;
+  overflow: scroll;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: absolute;
+  left: 300px;
+  width: 0;
+  height: 100%;
+  margin-left: -300px;
+  overflow-y: auto;
+  background: #33414e;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 300px;
+}
+
+#page-content-wrapper {
+  position: absolute;
+  padding: 15px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.xyz {
+  min-width: 360px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: relative;
+  margin-right: 0px;
+}
+
+.navbar-default .navbar-brand, .glyph-color, .icon-color {
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-default .navbar-toggle:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.noborder {
+  height: 50px;
+  border: none;
+}
+
+.nav-back-color {
+  height: 50px;
+  background-color: #33414e;
+}
+
+.navbar-collapse.collapse>.new-collapse {
+  height: 50px;
+}
+
+.fixed-brand {
+  width: auto;
+  border-radius: 5px;
+  background: transparent url(../images/biarca.png) no-repeat center;
+  /* background-color:#fb6542; */
+  background-color:#ffffff;
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 2px;
+}
+
+.sidebar-nav li {
+  text-indent: 15px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-left: #fb6542 2px solid;
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+@media ( min-width : 768px) {
+  #wrapper {
+    padding-left: 300px;
+  }
+  .fixed-brand {
+    width: 300px;
+  }
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+    width: 300px;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 300px;
+  }
+  #wrapper.toggled-2 #sidebar-wrapper {
+    width: 50px;
+  }
+  #wrapper.toggled-2 #sidebar-wrapper:hover {
+    width: 300px;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+    padding-left: 300px;
+  }
+  #wrapper.toggled-2 #page-content-wrapper {
+    position: absolute;
+    margin-right: 0;
+    margin-left: -250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    width: auto;
+  }
+}
+
+.nav-popup>li ul {
+  width: 220px;
+  position: absolute;
+  overflow: visible;
+  display: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+.panel-green {
+  border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+  border-color: #5cb85c;
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.panel-green a {
+  color: #5cb85c;
+}
+
+.panel-green a:hover {
+  color: #3d8b3d;
+}
+
+.panel-red {
+  border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+  border-color: #d9534f;
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.panel-red a {
+  color: #d9534f;
+}
+
+.panel-red a:hover {
+  color: #b52b27;
+}
+
+.panel-yellow {
+  border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+  border-color: #f0ad4e;
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+  color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+  color: #df8a13;
+}
+
+.list-group-grey {
+  border-radius: 4px;
+  background-color: #33414E;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+}
+
+.list-group-item-grey.active, .list-group-item-grey.active:hover,
+  .list-group-item-grey.active:focus {
+  text-shadow: 0 -1px 0 #286090;
+  background-image: -webkit-linear-gradient(top, #337ab7 0%, #5C6771 100%);
+  background-image: -o-linear-gradient(top, #337ab7 0%, #5C6771 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7),
+    to(#5C6771));
+  background-image: linear-gradient(to bottom, #337ab7 0%, #5C6771 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7',
+    endColorstr='#ff2b669a', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #5C6771;
+  color: #fff;
+}
+
+.list-group-item-grey.active .badge, .list-group-item-grey.active:hover .badge,
+  .list-group-item-grey.active:focus .badge {
+  text-shadow: none;
+  color: #fff;
+}
+
+.list-group-item-grey a {
+  color: #fff;
+}
+
+.list-group-item-grey a:hover {
+  color: #fff;
+  background: none;
+}
+
+.dropdown-menu>li>a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-left: #fb6542 2px solid;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus
+  {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+.navbar-brand {
+  float: left!important;
+}
+
+.logo {
+  background: transparent url(../images/biarca.png) scroll no-repeat center;
+  background-size: 200px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image2 {
+  content: url(../images/background.jpg);
+}
+
+.tcolor {
+  font-size: 18px;
+  color:green;
+  text-decoration:none;
+}
+
+.page-header {
+    color: #3ca6db;
+    margin: 25px 0 20px;
+}
+
+.well_nav {
+    padding: 20px 10px;
+    font: normal 14px/145%'Roboto', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}

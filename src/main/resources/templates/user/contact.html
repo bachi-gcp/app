@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+ <div class="content-wrapper" th:fragment="content">
+  <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="row" align="center">
+        <h3 class="page-header">Location</h3>
+        <div class="col-xs-5 well text-primary">
+          <h4>
+            <strong>United States - California</strong>
+          </h4>
+          <h4>1060 Hyde Ave</h4>
+          <h4>San Jose, CA 95129</h4>
+          <h4>Phone Number: 408-564-4465</h4>
+        </div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-5 well text-primary">
+          <h4>
+            <strong>India - Hyderabad</strong>
+          </h4>
+          <h4>Plot No 82/D, Patrika Nagar</h4>
+          <h4>HiTech City, Madhapur</h4>
+          <h4>Hyderabad, Telangana 500081</h4>
+        </div>
+        <div class="address" style="padding-top: 0px;"></div>
+      </div>
+    </section>
+    <!-- Main content -->
+  <section class="content">
+  <!-- Your Page Content Here -->
+  </section>
+  <!-- /.content -->
+  <div th:field="*{error}"></div>
+ </div>
+</body>
+</html>

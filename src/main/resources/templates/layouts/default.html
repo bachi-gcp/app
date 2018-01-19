@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/style :: style">
+</head>
+<body>
+ <div th:replace="fragments/header :: header">Header</div>
+ <div id="wrapper" class="container-fluid">
+  <div class="row">
+   <div th:replace="fragments/sidebar :: sidebar">sidebar</div>
+   <div id="page-content-wrapper">
+    <div th:replace="${view} :: content">Content</div>
+   </div>
+   </div>
+ </div>
+ <!-- <div th:replace="fragments/footer :: footer">Footer</div> -->
+ <div th:replace="fragments/js :: js"></div>
+</body>
+</html>

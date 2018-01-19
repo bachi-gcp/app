@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/style :: style">
+</head>
+<body>
+ <div th:replace="${view} :: content">Content</div>
+ <div th:replace="fragments/js :: js">Scripts</div>
+</body>
+</html>

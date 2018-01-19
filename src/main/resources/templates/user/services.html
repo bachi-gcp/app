@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+ <div class="content-wrapper" th:fragment="content">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+      <h3 class="page-header">Cloud Consulting Services</h3>
+      <p>Biarca is a cloud consulting services company that assists mid market and large
+        enterprises on their cloud adoption. As a trusted advisor, Biarca's mission is to help
+        customers accelerate their digital transformation journey so they can innovate and compete
+        better, regardless of the type of cloud (private, public, multi cloud). Key areas of focus
+        for Biarca are Cloud adoption services, Infrastructure services, DevOps Services and
+        Application Services. Biarca's cloud experts can help leverage the latest tools and
+        technologies like Containers, Machine learning, etc. to provide the highest ROI.</p>
+      <div class="well_nav">
+        <ul class="list-unstyled">
+          <li ng-class="{active: activesubtab =='/solutions/infrastructure_Service'}"><a
+            href="/solutions/infrastructure_Service" class="abc">Infrastructure Services</a></li>
+          <li ng-class="{active: activesubtab =='/solutions/devop_as_service'}"><a
+            href="/solutions/devop_as_service" class="abc">DevOps as a Service</a></li>
+          <li ng-class="{active: activesubtab =='/solutions/applicaion_services'}" class="active"><a
+            href="/solutions/applicaion_services" class="abc">Application Services</a></li>
+          <li ng-class="{active: activesubtab =='/solutions/cloud_adoption_services'}"><a
+            href="/solutions/cloud_adoption_services" class="abc">Cloud Adoption Services</a></li>
+        </ul>
+      </div>
+    </section>
+  <!-- Main content -->
+  <section class="content">
+  <!-- Your Page Content Here -->
+  </section>
+  <!-- /.content -->
+  <div th:field="*{error}"></div>
+ </div>
+</body>
+</html>

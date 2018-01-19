@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+  <div th:fragment="header">
+    <div id="nav-wrapper">
+      <nav class="navbar noborder navbar-default no-margin">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header fixed-brand">
+          <a class="navbar-brand" href="http://biarca.io"><span role="link" class="logo"></span></a>
+        </div>
+        <!-- navbar-header-->
+        <div class="new-collapse nav-back-color"
+          id="bs-example-navbar-collapse-1">
+          <ul class="nav">
+            <li class="pull-left">
+              <button
+                class="btn navbar-toggle collapse in fa fa-bars fa-lg glyph-color"
+                aria-hidden="true" data-toggle="collapse"
+                id="menu-toggle-2"></button>
+            </li>
+
+            <li class="pull-right dropdown last">
+              <button
+                class="btn navbar-toggle fa fa-power-off glyph-color dropdown-toggle"
+                aria-hidden="true" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul
+                class="dropdown-menu nav nav-pills nav-stacked list-group-grey">
+                <li class="list-group-item-grey">
+                  <a id="logout" href="/logout" th:action="@{/logout}">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- bs-example-navbar-collapse-1 -->
+      </nav>
+    </div>
+  </div>
+</body>
+</html>

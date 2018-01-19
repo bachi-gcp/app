@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+ <div class="content-wrapper" th:fragment="content">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+
+
+<div class="row my-card justify-content-center">
+  <div class="col-lg-4 image2"></div>
+    <div class="col-lg-8 card">
+<!--       <h1>Welcome to the team</h1> -->
+      <h1>Hi there, I'm Jon Snow, King of the North, Ex-commander of the Night's Watch...</h1>
+      <div class="d-none d-lg-block">
+        <p>
+          Ned Stark's Nephew, Rhaegar Targaryen's son and true heir to the
+          fucking throne. Well, I have many other identities too and you know a couple of them
+          already. Let's save it for another day.
+        </p>
+        <h3>Finally, I've realized</h3>
+      </div>
+      <p>After spending all day chasing the white walkers and all night with my aunt, I'd never
+        make enough time building my own website.</p>
+      <p>
+        So, here we are, I've found this web site by <a class="blink" href="http://biarca.io/"><span class="tcolor" > Biarca </span></a>to
+        put on my business list, that's how at least someone can find me who want's to become an ally.
+      </p>
+      <p>Just let 'em send the ravens...</p>
+      <a href="#" class="btn btn-primary mt-2">Send a Raven</a>
+      <h4 class="mt-4">or, keep your eyes on</h4>
+    </div>
+</div>
+
+  </section>
+  <!-- Main content -->
+  <section class="content">
+  <!-- Your Page Content Here -->
+  </section>
+  <!-- /.content -->
+  <div th:field="*{error}"></div>
+ </div>
+</body>
+</html>
